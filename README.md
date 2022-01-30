@@ -1,4 +1,4 @@
-# Travelling Salesman Problem: Parallel Implementations & Analysis
+# From Learning Based Control to Safe Reinforcement Learning
 
 ## Course Project for CP 315 [Robot Learning and Control]
 
