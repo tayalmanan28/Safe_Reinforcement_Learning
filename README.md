@@ -37,17 +37,18 @@ Once in the desired environment install the following packages:
 ### Training: 
 
 * Training the proposed approach: 
-`python main.py --env Unicycle --gamma_b 20 --max_episodes 400 --cuda --updates_per_step 2 --batch_size 512  --seed 12345 --model_based`
+`python3 main.py --gamma_b 20 --max_episodes 200 --cuda --updates_per_step 2 --batch_size 512 --model_based`
 
 * Training the baseline:
-`python main.py --env Unicycle --gamma_b 20 --max_episodes 400 --cuda --updates_per_step 1 --batch_size 256  --seed 12345 --no_diff_qp`
+`python3 main.py --gamma_b 20 --max_episodes 200 --cuda --updates_per_step 1 --batch_size 256 --no_diff_qp`
 
 * Training the modified approach from "End-to-End Safe Reinforcement Learning through Barrier Functions for Safety-Critical Continuous Control Tasks": 
-`python main.py --env Unicycle --gamma_b 20 --max_episodes 400 --cuda --updates_per_step 1 --batch_size 256   --seed 12345 --no_diff_qp --use_comp True`
+`python3 main.py --gamma_b 20 --max_episodes 200 --cuda --updates_per_step 1 --batch_size 256 --no_diff_qp --use_comp True`
 
 ### Testing
 
-* To test, add `--mode test` and `--resume /path/to/output/{1}-run-{2}`, where `{1}` is the env name and `{2}` is the experiment number, to any of the commands above.
+* To test: `python3 main.py --mode test --resume output/Unicycle-run{1}`, where `{1}` is the experiment number.
+* To Visualize `python3 main.py --mode test --resume output/Unicycle-run{1} --visualize`
 
 ## LICENSE
 
