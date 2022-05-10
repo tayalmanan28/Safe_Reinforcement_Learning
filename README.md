@@ -28,23 +28,31 @@ Switch to the newly create environment:
 ```
 $ conda activate safe_rl  
 ```
+Then, clone the repository on your system:
+```
+$ git clone https://github.com/tayalmanan28/Safe_Reinforcement_Learning.git
+```
 
-Once in the desired environment install the following packages:
+Install the following required packages:
+```
+$ pip install -r requirements.txt
+```
 
 ## Running the Experiments
-`Unicycle` involves a unicycle robot tasked with reaching a desired location while avoiding obstacles
+The environment used in this experiment is `Unicycle`. `Unicycle` involves a unicycle robot tasked with reaching a desired location while avoiding obstacles
 
 ### Training: 
 
 * Training the proposed approach: 
 `python3 main.py --gamma_b 20 --max_episodes 200 --cuda --updates_per_step 2 --batch_size 512 --model_based`
 
-* Training the baseline:
+<!-- * Training the baseline:
 `python3 main.py --gamma_b 20 --max_episodes 200 --cuda --updates_per_step 1 --batch_size 256 --no_diff_qp`
 
 * Training the modified approach from "End-to-End Safe Reinforcement Learning through Barrier Functions for Safety-Critical Continuous Control Tasks": 
 `python3 main.py --gamma_b 20 --max_episodes 200 --cuda --updates_per_step 1 --batch_size 256 --no_diff_qp --use_comp True`
-
+ -->
+ 
 ### Testing
 
 * To test: `python3 main.py --mode test --resume output/Unicycle-run{1}`, where `{1}` is the experiment number.
