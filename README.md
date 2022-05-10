@@ -38,7 +38,9 @@ The environment used in this experiment is `Unicycle`. `Unicycle` involves a uni
 ### Training: 
 
 * Training the proposed approach: 
-`python3 main.py --gamma_b 20 --max_episodes 200 --cuda --updates_per_step 2 --batch_size 512 --model_based`
+```
+python3 main.py --gamma_b 20 --max_episodes 200 --cuda --updates_per_step 2 --batch_size 512 --model_based
+```
 
 <!-- * Training the baseline:
 `python3 main.py --gamma_b 20 --max_episodes 200 --cuda --updates_per_step 1 --batch_size 256 --no_diff_qp`
@@ -49,8 +51,8 @@ The environment used in this experiment is `Unicycle`. `Unicycle` involves a uni
  
 ### Testing
 
-* To test: `python3 main.py --mode test --resume output/Unicycle-run{1}`, where `{1}` is the experiment number.
-* To Visualize `python3 main.py --mode test --resume output/Unicycle-run{1} --visualize`
+* To test: ```python3 main.py --mode test --resume output/Unicycle-run{1}```, where `{1}` is the experiment number.
+* To Visualize ```python3 main.py --mode test --resume output/Unicycle-run{1} --visualize```
 
 ## LICENSE
 
