@@ -1,4 +1,4 @@
-# From Learning Based Control to Safe Reinforcement Learning
+# Safe Reinforcement Learning
 
 ***
 
