@@ -1,0 +1,7 @@
+matplotlib
+gym
+cvxpy
+qpth
+gpytorch
+comet_ml
+pyglet

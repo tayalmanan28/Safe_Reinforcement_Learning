@@ -196,7 +196,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='PyTorch Soft Actor-Critic Args')
     # Environment Args
-    parser.add_argument('--env-name', default="SimulatedCars", help='Options are Unicycle or SimulatedCars.')
+    parser.add_argument('--env-name', default="Unicycle", help='Options is Unicycle')
     # Comet ML
     parser.add_argument('--log_comet', action='store_true', dest='log_comet', help="Whether to log data")
     parser.add_argument('--comet_key', default='', help='Comet API key')
@@ -224,8 +224,8 @@ if __name__ == "__main__":
                         help='random seed (default: 12345)')
     parser.add_argument('--batch_size', type=int, default=256, metavar='N',
                         help='batch size (default: 256)')
-    parser.add_argument('--max_episodes', type=int, default=400, metavar='N',
-                        help='maximum number of episodes (default: 400)')
+    parser.add_argument('--max_episodes', type=int, default=200, metavar='N',
+                        help='maximum number of episodes (default: 200)')
     parser.add_argument('--hidden_size', type=int, default=256, metavar='N',
                         help='hidden size (default: 256)')
     parser.add_argument('--updates_per_step', type=int, default=1, metavar='N',
