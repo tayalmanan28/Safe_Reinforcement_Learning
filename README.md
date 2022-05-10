@@ -16,20 +16,20 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-pyt
 
 Create a conda environment for the Safe RL:  
 ```
-$ conda create --name safe_rl  
+conda create --name safe_rl  
 ```
 Switch to the newly create environment:  
 ```
-$ conda activate safe_rl  
+conda activate safe_rl  
 ```
 Then, clone the repository on your system:
 ```
-$ git clone https://github.com/tayalmanan28/Safe_Reinforcement_Learning.git
+git clone https://github.com/tayalmanan28/Safe_Reinforcement_Learning.git
 ```
 
 Install the following required packages:
 ```
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Running the Experiments
@@ -51,8 +51,15 @@ python3 main.py --gamma_b 20 --max_episodes 200 --cuda --updates_per_step 2 --ba
  
 ### Testing
 
-* To test: ```python3 main.py --mode test --resume output/Unicycle-run{1}```, where `{1}` is the experiment number.
-* To Visualize ```python3 main.py --mode test --resume output/Unicycle-run{1} --visualize```
+* To test: 
+```
+python3 main.py --mode test --resume output/Unicycle-run{1}
+```
+where `{1}` is the experiment number.
+* To Visualize 
+```
+python3 main.py --mode test --resume output/Unicycle-run{1} --visualize
+```
 
 ## LICENSE
 
