@@ -43,6 +43,9 @@ class UnicycleEnv(gym.Env):
         # Viewer
         self.viewer = None
 
+    def seed(self, seed=None):
+        np.random.seed(seed)
+
     def step(self, action):
         """Organize the observation to understand what's going on
 
